@@ -38,7 +38,7 @@
 
   ## Deployment
   - Link to my repo: https://github.com/tarikorg/express_note_taker
-  
+  - Deployed link: https://express-note-taker-g4y0.onrender.com
    
   ## Questions
   - Github username: https://github.com/tarikorg
