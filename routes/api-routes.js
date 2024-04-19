@@ -35,7 +35,7 @@ router.post('/notes', async (req,res)=>{
 })
 
 
-//for bonus 
+//for bonus    url is given in readme directions '/notes/:id'
 router.delete('/notes/:id', async(req, res)=>{
     const waitData = await readData() // read the current json we have
     const target = req.params.id // the target element's id we want to delete
