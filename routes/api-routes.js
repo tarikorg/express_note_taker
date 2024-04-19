@@ -43,11 +43,12 @@ router.delete('/notes/:id', async(req, res)=>{
     //the data after delete
     const currentData = waitData.filter((userObj) => userObj.id !== target)
 
-    // respond with updated json if anything is deleted
-    if(waitData.length > currentData.length){
+    // respond with updated json
+    
       await fs.writeFile('./db/db.json', JSON.stringify(currentData, null, 2))
-      res.json(currentData) //
-    }
+
+      res.json(currentData) //respond with new JSON
+  
 
 
 })
